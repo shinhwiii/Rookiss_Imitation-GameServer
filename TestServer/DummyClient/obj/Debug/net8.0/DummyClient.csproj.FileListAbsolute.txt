@@ -12,3 +12,7 @@ C:\Users\USER\source\repos\TestServer\DummyClient\obj\Debug\net8.0\refint\DummyC
 C:\Users\USER\source\repos\TestServer\DummyClient\obj\Debug\net8.0\DummyClient.pdb
 C:\Users\USER\source\repos\TestServer\DummyClient\obj\Debug\net8.0\DummyClient.genruntimeconfig.cache
 C:\Users\USER\source\repos\TestServer\DummyClient\obj\Debug\net8.0\ref\DummyClient.dll
+C:\Users\USER\source\repos\TestServer\DummyClient\bin\Debug\net8.0\ServerCore.dll
+C:\Users\USER\source\repos\TestServer\DummyClient\bin\Debug\net8.0\ServerCore.pdb
+C:\Users\USER\source\repos\TestServer\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\TestServer\DummyClient\obj\Debug\net8.0\DummyCli.C46919B7.Up2Date

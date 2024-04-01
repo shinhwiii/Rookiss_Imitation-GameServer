@@ -2,7 +2,7 @@
 using System.Net;
 using System.Text;
 
-namespace DummyClient
+namespace Server
 {
     class GameSession : Session
     {
@@ -10,12 +10,12 @@ namespace DummyClient
         {
             Console.WriteLine($"OnConnected: {endPoint}");
 
-            // 보낸다
-            for (int i = 0; i < 5; i++)
-            {
-                byte[] sendBuff = Encoding.UTF8.GetBytes($"Hello World! {i}");
-                Send(sendBuff);
-            }
+            byte[] sendBuff = Encoding.UTF8.GetBytes("Welcome to MMORPG Server");
+            Send(sendBuff);
+
+            Thread.Sleep(1000);
+
+            Disconnect();
         }
 
         public override void OnDisconnected(EndPoint endPoint)
@@ -26,7 +26,7 @@ namespace DummyClient
         public override void OnRecv(ArraySegment<byte> buffer)
         {
             string recvData = Encoding.UTF8.GetString(buffer.Array, buffer.Offset, buffer.Count);
-            Console.WriteLine($"[From Server] {recvData}");
+            Console.WriteLine($"[From Client] {recvData}");
         }
 
         public override void OnSend(int numOfBytes)
@@ -37,6 +37,8 @@ namespace DummyClient
 
     class Program
     {
+        static Listener _listener = new Listener();
+
         static void Main(string[] args)
         {
             // DNS (Domain Name System) : www.shinhwi.com => 123.123.123.12
@@ -45,13 +47,12 @@ namespace DummyClient
             IPAddress ipAddr = ipHost.AddressList[0];
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777); // 7777은 포트 번호 (임의로)
 
-            Connector connector = new Connector();
-
-            connector.Connect(endPoint, () => { return new GameSession(); });
+            _listener.Init(endPoint, () => { return new GameSession(); });
+            Console.WriteLine("Listening...");
 
             while (true)
             {
-                Thread.Sleep(100);
+
             }
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\TestServer\\DummyClient\\DummyClient.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\TestServer\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\TestServer\\DummyClient\\DummyClient.csproj": {
+    "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\TestServer\\DummyClient\\DummyClient.csproj",
-        "projectName": "DummyClient",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\TestServer\\DummyClient\\DummyClient.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj",
+        "projectName": "ServerCore",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\TestServer\\DummyClient\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj": {
-                "projectPath": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -68,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj": {
+    "C:\\Users\\USER\\source\\repos\\TestServer\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj",
-        "projectName": "ServerCore",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\TestServer\\Server\\Server.csproj",
+        "projectName": "Server",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\TestServer\\Server\\Server.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\TestServer\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -91,7 +87,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj": {
+                "projectPath": "C:\\Users\\USER\\source\\repos\\TestServer\\ServerCore\\ServerCore.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

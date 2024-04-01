@@ -1,6 +1,4 @@
-C:\Users\USER\source\repos\TestServer\ServerCore\bin\Debug\net8.0\ServerCore.exe
 C:\Users\USER\source\repos\TestServer\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
-C:\Users\USER\source\repos\TestServer\ServerCore\bin\Debug\net8.0\ServerCore.runtimeconfig.json
 C:\Users\USER\source\repos\TestServer\ServerCore\bin\Debug\net8.0\ServerCore.dll
 C:\Users\USER\source\repos\TestServer\ServerCore\bin\Debug\net8.0\ServerCore.pdb
 C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,5 +8,4 @@ C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\ServerCore.csp
 C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\ServerCore.dll
 C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
 C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\ServerCore.pdb
-C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\ServerCore.genruntimeconfig.cache
 C:\Users\USER\source\repos\TestServer\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
