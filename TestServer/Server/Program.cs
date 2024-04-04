@@ -9,6 +9,8 @@ namespace Server
 
         static void Main(string[] args)
         {
+            PacketManager.Instance.Register();
+
             // DNS (Domain Name System) : www.shinhwi.com => 123.123.123.12
             string host = Dns.GetHostName();
             IPHostEntry ipHost = Dns.GetHostEntry(host);
