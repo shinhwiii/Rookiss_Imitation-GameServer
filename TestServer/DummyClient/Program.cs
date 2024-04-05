@@ -15,11 +15,14 @@ namespace DummyClient
 
             Connector connector = new Connector();
 
-            connector.Connect(endPoint, () => { return new ServerSession(); });
+            connector.Connect(endPoint,
+                () => { return SessionManager.Instace.Generate(); }, 10);
 
             while (true)
             {
-                Thread.Sleep(100);
+                SessionManager.Instace.SendForEach();
+
+                Thread.Sleep(250);
             }
         }
     }
