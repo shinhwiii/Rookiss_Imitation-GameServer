@@ -16,7 +16,8 @@ namespace DummyClient
             Connector connector = new Connector();
 
             connector.Connect(endPoint,
-                () => { return SessionManager.Instace.Generate(); }, 10);
+                () => { return SessionManager.Instace.Generate(); },
+                500);
 
             while (true)
             {
