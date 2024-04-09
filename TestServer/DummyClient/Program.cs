@@ -17,7 +17,7 @@ namespace DummyClient
 
             connector.Connect(endPoint,
                 () => { return SessionManager.Instace.Generate(); },
-                500);
+                100);
 
             while (true)
             {
